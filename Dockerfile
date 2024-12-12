@@ -13,7 +13,7 @@ COPY entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
 
 # Add healthcheck
-HEALTHCHECK --interval=30s --timeout=10s --start-period=5s --retries=3 \
+HEALTHCHECK --interval=30s --timeout=10s --start-period=10s --retries=20 \
     CMD curl -f http://localhost:8545 || exit 1
 
 ENTRYPOINT ["/entrypoint.sh"]

@@ -19,9 +19,9 @@ docker run -it \
 
 # Required Variables
 ```
-JWT_SECRET=0x081a0b7a3a0cf1dee15ba5d851d4330e1549af20e56eec7bce5f1ad0cc4332ae  # Or generate with: openssl rand -hex 32. The authenticated API port isn't exposed externally as an added layer of security.
+JWT_SECRET=0x081a0b7a3a0cf1dee15ba5d851d4330e1549af20e56eec7bce5f1ad0cc4332ae  # Or generate with: openssl rand -hex 32.
 GENESIS_FILE=facet-sepolia.json                    # Genesis file name
 L1_NETWORK=sepolia                                 # Network name (sepolia/mainnet)
-L1_RPC_URL=https://l1_rpc   # L1 RPC endpoint
-L1_GENESIS_BLOCK=7109800                          # Genesis block number
+L1_RPC_URL=https://l1_rpc                          # L1 RPC endpoint
+L1_GENESIS_BLOCK=7109800                           # Genesis block number
 ```

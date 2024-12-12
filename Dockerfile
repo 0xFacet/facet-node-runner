@@ -4,6 +4,7 @@ FROM docker/compose:alpine-1.29.2
 RUN apk add --no-cache \
     bash \
     curl \
+    jq \
     && rm -rf /var/cache/apk/*
 
 WORKDIR /app
